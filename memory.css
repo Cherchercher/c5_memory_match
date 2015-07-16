@@ -1,0 +1,135 @@
+/**,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;*/
+
+/*body {
+	text-align: center;
+}
+
+div {
+	
+	border: 3px solid black;
+	border-radius: 8px;
+	display: inline-block;
+	font-size: 40px;
+	height: 200px;
+	margin: 15px;
+	padding-top: 60px;
+	width: 200px;
+}
+/*<a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <br />
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <br />
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <br />
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+      <a href="#"><img src="tile.jpg" class="tile" alt="" /></a>
+       <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="" ></a>
+     <img src="http://st.depositphotos.com/1006187/4958/i/950/depositphotos_49589071-Golden-Alphabet-C-letter.jpg" class="front" alt="">
+     </div>
+     <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg"  class="back" alt="" >
+     <img src="http://floral-designs.org/hash/bigthumbs/f/7/a/6/f7a6-vector-gold-font-type-letter-r-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-208159081.jpg" class="front" alt="">
+     </div>
+       <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg"  class="back" alt="">
+    <img src="http://floral-designs.org/hash/bigthumbs/f/7/a/6/f7a6-vector-gold-font-type-letter-r-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-208159081.jpg" class="front" alt="">
+     </div>
+     <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="" >
+     <img src="https://www.colourbox.com/preview/2008659-golden-letter-a-of-alphabet-hi-res.jpg" class="front" alt="" >
+     </div>
+       <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="">
+     <img src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg" class="front" alt="" >
+     </div>
+     <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="" >
+     <img src="http://thumb101.shutterstock.com/display_pic_with_logo/352621/352621,1294352488,7/stock-photo-one-letter-of-golden-alphabet-68449513.jpg" class="front" alt="" >
+     </div>
+       <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="" >
+<img  src= "http://thumb1.shutterstock.com/display_pic_with_logo/2595013/256319308/stock-photo-golden-alphabet-letter-d-on-white-background-256319308.jpg"class="front" alt="" >
+     </div>
+     <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="">
+     <img src="https://rfclipart.com/image/big/db-d6-e6/alphabet-made-of-golden-perforated-tape-letter-l-Download-Royalty-free-Vector-File-EPS-36657.jpg"
+ class="front" alt="" >
+     </div>
+     <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="" >
+     <img src="https://www.colourbox.com/preview/2008659-golden-letter-a-of-alphabet-hi-res.jpg" class="front" alt="" >
+     </div>
+       <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="">
+     <img src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg" class="front" alt="" >
+     </div>
+     <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="" >
+     <img src="http://thumb101.shutterstock.com/display_pic_with_logo/352621/352621,1294352488,7/stock-photo-one-letter-of-golden-alphabet-68449513.jpg" class="front" alt="" >
+     </div>
+       <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" alt="" >
+<img src="http://thumb1.shutterstock.com/display_pic_with_logo/2595013/256319308/stock-photo-golden-alphabet-letter-d-on-white-background-256319308.jpg" class="front" alt="" >
+     </div>
+     <div class="container">
+      <img style="margin-top: 0px;" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back" >
+     <img src="https://rfclipart.com/image/big/db-d6-e6/alphabet-made-of-golden-perforated-tape-letter-l-Download-Royalty-free-Vector-File-EPS-36657.jpg"
+ class="front" alt="" >
+     </div>
+   </div>*/
+   
+
+li{height: 50px;width: 25%;display: inline-block;}
+
+.column{width:20%;
+height:1100px;
+border: 1px solid black;
+float: left;}
+
+/*.container{width: 250px;
+   	height:250px;
+   	display:inline-block;
+   
+   	}*/
+
+
+
+.card-face{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_container{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+#boy{width: 100%;height:;}
+.selected{
+    display:none;
+}
+header{display: inline-block;
+width: 70%; position: relative;}
+h1{width:20%;display: inline-block; margin:0;padding: 0px;}
+h2{position: absolute; text-align: center; display: inline-block;margin-left: 250px;}
+h3 {position: absolute; margin-left:600px;display: inline-block;text-align: center;}

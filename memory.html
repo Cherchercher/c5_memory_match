@@ -1,0 +1,106 @@
+<html>
+<head>
+   <title>Concentration Game</title>
+   <link href="memory.css" rel="stylesheet" type="text/css">
+   
+<script src="
+https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script>
+  var second_clicked_card=false;
+  var first_clicked_card_src=null;
+ function card_click(card_back_id,card_front_id)
+ {
+    $("card_back_id").hide();
+    var card_front_src = $(card_front_id).attr('src');
+    if(!second_clicked_card)
+    {
+         console.log('it is the first first clicked card');
+
+
+         console.log("card_front_src : ",card_front_src);
+         first_clicked_card_src = card_front_src;
+         second_clicked_card = true;
+   }
+    else 
+    { var card_front_src = $(card_front_id).attr('src');
+      if (first_clicked_card_src==card_front_src) 
+      {
+         console.log("we are the same!");
+      }
+      else 
+      {
+         console.log("Try again!");
+      } ;
+   }
+}
+
+
+  </script>
+     
+       <header id="head" img src="" alt="child education" >
+    <h1 id="menu">child education</h1>
+   
+   <h2 id="title">game info</h2>
+      
+   <h3 id="">h3</h3>
+</header>
+ 
+</head>
+
+<body>
+   
+ <div class="column">
+   <img id="boy" src="http://static.webshopapp.com/shops/009071/files/004618329/lego-soft-bricks.jpg">
+ </div>
+
+   <div id="board">
+         <div class="card_container">
+    
+    <img class="front-face card-face" src="http://cache4.asset-cache.net/xc/511617655.jpg?v=2&c=IWSAsset&k=2&d=gSrlMj8mG90g-6ymmHyzZ2GcoPp6mUkmbdf-f6kav15kjS4YaCnzwHfX45Lwj4JC0" id="card_front1">
+    <img class="front-face card-face" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back_face card_face" alt="" id="card_back1" onclick="card_click('#card_back1','#card_front1')">
+</div>
+<div class="card_container">
+    
+    <img class="front-face card-face" src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg" id="card_front2" alt="" >
+    <img class="back-face card-face" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back_face card_face" alt="" id="card_back2" onclick="card_click('#card_back2','#card_front2')">
+</div>
+
+   
+</div>
+
+   
+     
+
+
+
+
+   
+
+   <div id="main">
+
+      <p>Play the Concentration game! Click the tiles on the left and
+         match pairs of identical images.
+         <br /><br />
+         Click the <b>Reload Tiles</b> 
+         button below to randomize the position of the tiles and play 
+         again.
+         <br /><br />
+         Click the <b>Show Tiles</b> button to view the 
+         solution.
+      </p>
+
+   </div>
+
+   <div id="controls">
+      <p>
+         <input type="button" value="Reload Tiles" id="reload" />
+         <input type="button" value="Show Tiles" id="showAll" />
+      </p>
+   </div>
+
+   <address>
+
+   </address>
+
+</body>
+</html>
