@@ -9,43 +9,87 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js">
 </script>
 <script>
 
+/* var div=$("<div class='h1')Win!</div>")
+   $(div).css("height","72px");
+  $(div).css("width","50px");
+ $(div).css("background-image","url(
+    
+    -webkit-animation: play 1.2s steps(10) infinite;
+    /*   -moz-animation: play 1.2s steps(10) infinite;
+        -ms-animation: play 1.2s steps(10) infinite;
+         -o-animation: play 1.2s steps(10) infinite;
+            animation: play 1.2s steps(10) infinite; 
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -500px; }
+}
+
+*/
+
+
+
   var second_clicked_card=false;
   var first_clicked_card_src=null;
+  var first_back_card_id ;
+  var first_front_card_id ;
  function card_click(card_back_id,card_front_id)
  {  console.log("in card_click()", card_back_id);
     //$('#card_back_id').hide();
    //$('#card_back1').css('display','none');
     $(card_back_id).addClass('selected');
+
+     console.log(card_front_id);
+       
+          
+          
     var card_front_src = $(card_front_id).attr('src');
+     $(card_back_id).hide();
     if(!second_clicked_card)
     {
          console.log('it is the first clicked card');
-
-
+          first_back_card_id = card_back_id;
+          first_front_card_id = card_front_id;
          console.log("card_front_src : ",card_front_src);
          first_clicked_card_src = card_front_src;
          second_clicked_card = true;
    }
+
     else 
-    { var card_front_src = $(card_front_id).attr('src');
+    {   
+      var card_front_src = $(card_front_id).attr('src');
+           
       if (first_clicked_card_src==card_front_src) 
       {
-         console.log("we are the same!");
-          $("card_back_id,card").hide();
-                  $(card_back_id,card_front_id).hide();
+         console.log("we are the same!",$(card_front_id));
+    
+       $(card_back_id).show().removeClass("back-face").addClass("hi");
+          //$(first_clicked_card_id).hide();
+        second_clicked_card=false;
+        first_clicked_card_src=null;
       }
       else 
       {
          console.log("Try again!");
-  
+
+         $(card_back_id).show;
+
+          $(first_back_card_id).show();
+
+           /*div.appendTo(card_back_id);*/
+        second_clicked_card=false;
+        first_clicked_card_src=null;
       } ;
+
    }
+
 }
 
 
   </script>
      
-       <header id="head" img src="" alt="child education" >
+       <header id="head" alt="child education">
     <h1 id="menu">child education</h1>
    
    <h2 id="title">game info</h2>
@@ -65,12 +109,22 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js">
          <div class="card_container">
     
     <img class="front-face card-face" src="http://cache4.asset-cache.net/xc/511617655.jpg?v=2&c=IWSAsset&k=2&d=gSrlMj8mG90g-6ymmHyzZ2GcoPp6mUkmbdf-f6kav15kjS4YaCnzwHfX45Lwj4JC0" id="card_front1">
-    <img class="front-face card-face" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back_face card_face" alt="" id="card_back1" onclick="card_click('#card_back1','#card_front1')">
+    <img class="back-face card-face" alt="" id="card_back1" onclick="card_click('#card_back1','#card_front1')">
 </div>
 <div class="card_container">
     
     <img class="front-face card-face" src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg" id="card_front2" alt="" >
-    <img class="back-face card-face" src="http://www.langford120.com.au/uploads/7/6/8/0/7680920/8728774_orig.jpg" class="back_face card_face" alt="" id="card_back2" onclick="card_click('#card_back2','#card_front2')">
+    <img class="back-face card-face" alt="" id="card_back2" onclick="card_click('#card_back2','#card_front2')">
+</div>
+<div class="card_container">
+    
+    <img class="front-face card-face" src="http://cache4.asset-cache.net/xc/511617655.jpg?v=2&c=IWSAsset&k=2&d=gSrlMj8mG90g-6ymmHyzZ2GcoPp6mUkmbdf-f6kav15kjS4YaCnzwHfX45Lwj4JC0" id="card_front3">
+    <img  class="back-face card-face" alt="" id="card_back3" onclick="card_click('#card_back3','#card_front3')">
+</div>
+<div class="card_container">
+    
+    <img class="front-face card-face" src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg" id="card_front4" alt="" >
+    <img alt="" class="back-face card-face" id="card_back4" onclick="card_click('#card_back4','#card_front4')">
 </div>
 
 
@@ -107,6 +161,10 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js">
    <address>
 
    </address>
+    <div class="hi" id="baby"></div>
+   <div class="hi" ></div>
+  
+
 
 </body>
 </html>
