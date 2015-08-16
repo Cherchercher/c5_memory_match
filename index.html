@@ -1,46 +1,17 @@
+
+<!doctype html>
 <html>
 <head>
    <title>Concentration Game</title>
-   <link href="memory.css" rel="stylesheet" type="text/css">
+   <link href="style.css" rel="stylesheet" type="text/css">
    
 <script src="
 https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js">
 
 </script>
 <script>
-/*
-$(function () {
-    var parent = $("#shuffle");
-    var divs = parent.children();
-    while (divs.length) {
-        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-    }
-});
-<div id="shuffle">
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    <div>'#card_front1'</div>
-    
-</div>
-*/
 
-
-function reload_tiles(#randomize){
+function reload_tiles(){
   var contents=new Array()
   contents[0]='#card_front1'
   contents[1]='#card_front2'
@@ -186,161 +157,136 @@ function shuffle(array) {
 
 
   </script>
-     
-       <header id="head" alt="child education">
+</head>
+<body>
+<header id="head" alt="child education">
     <h1 id="menu">child education</h1>
    
    <h2 id="title">game info</h2>
       
-   <h3 id="">h3</h3>
+   <h3>h3</h3>
 </header>
- 
-</head>
-
-<body>
-   
- <div class="column">
+<div class="column">
    <img id="boy" src="http://static.webshopapp.com/shops/009071/files/004618329/lego-soft-bricks.jpg">
   </div>
-   <div id="board">
+  <div id="board">
          <div class="card_container">
     
-    <img class="front-face card-face" src="http://cache4.asset-cache.net/xc/511617655.jpg?v=2&c=IWSAsset&k=2&d=gSrlMj8mG90g-6ymmHyzZ2GcoPp6mUkmbdf-f6kav15kjS4YaCnzwHfX45Lwj4JC0" id="card_front1">
-    <img class="back-face card-face" alt="" id="card_back1" onclick="card_click('#card_back1','#card_front1')">
+    <img class="front-face card-face" id="card_front1" src="http://cache4.asset-cache.net/xc/511617655.jpg?v=2&amp;c=IWSAsset&amp;k=2&amp;d=gSrlMj8mG90g-6ymmHyzZ2GcoPp6mUkmbdf-f6kav15kjS4YaCnzwHfX45Lwj4JC0">
+    <img class="back-face card-face" id="card_back1" onclick="card_click('#card_back1','#card_front1')" alt="">
 </div>
 <div class="card_container ">
     
-    <img class="front-face card-face" src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg" id="card_front2" alt="" >
-    <img class="back-face card-face" alt="" id="card_back2" onclick="card_click('#card_back2','#card_front2')">
+    <img class="front-face card-face" id="card_front2" alt="" src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg">
+    <img class="back-face card-face" id="card_back2" onclick="card_click('#card_back2','#card_front2')" alt="">
 </div>
 <div class="card_container">
     
-    <img class="front-face card-face" src="http://thumb101.shutterstock.com/display_pic_with_logo/352621/352621,1294352488,7/stock-photo-one-letter-of-golden-alphabet-68449513.jpg" id="card_front3">
-    <img  class="back-face card-face" alt="" id="card_back3" onclick="card_click('#card_back3','#card_front3')">
+    <img class="front-face card-face" id="card_front3" src="http://thumb101.shutterstock.com/display_pic_with_logo/352621/352621,1294352488,7/stock-photo-one-letter-of-golden-alphabet-68449513.jpg">
+    <img class="back-face card-face" id="card_back3" onclick="card_click('#card_back3','#card_front3')" alt="">
 </div>
 <div class="card_container">
     
-    <img class="front-face card-face" src="https://www.colourbox.com/preview/2008659-golden-letter-a-of-alphabet-hi-res.jpg" id="card_front4">
-    <img class="back-face card-face" alt="" id="card_back4" onclick="card_click('#card_back4','#card_front4')">
+    <img class="front-face card-face" id="card_front4" src="https://www.colourbox.com/preview/2008659-golden-letter-a-of-alphabet-hi-res.jpg">
+    <img class="back-face card-face" id="card_back4" onclick="card_click('#card_back4','#card_front4')" alt="">
 </div>
    <div class="card_container">
     
-    <img class="front-face card-face" src="http://thumb1.shutterstock.com/display_pic_with_logo/2595013/256319308/stock-photo-golden-alphabet-letter-d-on-white-background-256319308.jpg" id="card_front5">
-    <img class="back-face card-face" alt="" id="card_back5" onclick="card_click('#card_back5','#card_front5')">
+    <img class="front-face card-face" id="card_front5" src="http://thumb1.shutterstock.com/display_pic_with_logo/2595013/256319308/stock-photo-golden-alphabet-letter-d-on-white-background-256319308.jpg">
+    <img class="back-face card-face" id="card_back5" onclick="card_click('#card_back5','#card_front5')" alt="">
 </div> 
 <div class="card_container">
     
-    <img class="front-face card-face" src="https://rfclipart.com/image/big/db-d6-e6/alphabet-made-of-golden-perforated-tape-letter-l-Download-Royalty-free-Vector-File-EPS-36657.jpg" id="card_front6">
-    <img class="back-face card-face" alt="" id="card_back6" onclick="card_click('#card_back6','#card_front6')">
+    <img class="front-face card-face" id="card_front6" src="https://rfclipart.com/image/big/db-d6-e6/alphabet-made-of-golden-perforated-tape-letter-l-Download-Royalty-free-Vector-File-EPS-36657.jpg">
+    <img class="back-face card-face" id="card_back6" onclick="card_click('#card_back6','#card_front6')" alt="">
 </div>
 <div class="card_container">
     
-    <img class="front-face card-face" src="https://www.colourbox.com/preview/2008659-golden-letter-a-of-alphabet-hi-res.jpg" id="card_front7">
-    <img class="back-face card-face" alt="" id="card_back7" onclick="card_click('#card_back7','#card_front7')">
+    <img class="front-face card-face" id="card_front7" src="https://www.colourbox.com/preview/2008659-golden-letter-a-of-alphabet-hi-res.jpg">
+    <img class="back-face card-face" id="card_back7" onclick="card_click('#card_back7','#card_front7')" alt="">
 </div>
 <div class="card_container">
     
-    <img class="front-face card-face" src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg"  id="card_front8">
-    <img class="back-face card-face" alt="" id="card_back8" onclick="card_click('#card_back8','#card_front8')">
+    <img class="front-face card-face" id="card_front8" src="http://png.clipart.me/graphics/previews/208/gold-font-type-letter-v-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-floral-motifs-victorian-abc_208159099.jpg">
+    <img class="back-face card-face" id="card_back8" onclick="card_click('#card_back8','#card_front8')" alt="">
 </div>
 <div class="card_container">
     
-    <img class="front-face card-face" src="http://thumb101.shutterstock.com/display_pic_with_logo/352621/352621,1294352488,7/stock-photo-one-letter-of-golden-alphabet-68449513.jpg" id="card_front9">
-    <img class="back-face card-face" alt="" id="card_back9" onclick="card_click('#card_back9','#card_front9')">
-</div>
-
-<div class="card_container">
-    
-    <img class="front-face card-face" src="https://rfclipart.com/image/big/db-d6-e6/alphabet-made-of-golden-perforated-tape-letter-l-Download-Royalty-free-Vector-File-EPS-36657.jpg" id="card_front10">
-    <img class="back-face card-face" alt="" id="card_back10" onclick="card_click('#card_back10','#card_front10')">
+    <img class="front-face card-face" id="card_front9" src="http://thumb101.shutterstock.com/display_pic_with_logo/352621/352621,1294352488,7/stock-photo-one-letter-of-golden-alphabet-68449513.jpg">
+    <img class="back-face card-face" id="card_back9" onclick="card_click('#card_back9','#card_front9')" alt="">
 </div>
 
 <div class="card_container">
     
-    <img class="front-face card-face" src="http://thumb1.shutterstock.com/display_pic_with_logo/2595013/256319308/stock-photo-golden-alphabet-letter-d-on-white-background-256319308.jpg" id="card_front11">
-    <img class="back-face card-face" alt="" id="card_back11" onclick="card_click('#card_back11','#card_front11')">
+    <img class="front-face card-face" id="card_front10" src="https://rfclipart.com/image/big/db-d6-e6/alphabet-made-of-golden-perforated-tape-letter-l-Download-Royalty-free-Vector-File-EPS-36657.jpg">
+    <img class="back-face card-face" id="card_back10" onclick="card_click('#card_back10','#card_front10')" alt="">
+</div>
+
+<div class="card_container">
+    
+    <img class="front-face card-face" id="card_front11" src="http://thumb1.shutterstock.com/display_pic_with_logo/2595013/256319308/stock-photo-golden-alphabet-letter-d-on-white-background-256319308.jpg">
+    <img class="back-face card-face" id="card_back11" onclick="card_click('#card_back11','#card_front11')" alt="">
 </div> 
   <div class="card_container">
     
-    <img class="front-face card-face" src="http://cache4.asset-cache.net/xc/511617655.jpg?v=2&c=IWSAsset&k=2&d=gSrlMj8mG90g-6ymmHyzZ2GcoPp6mUkmbdf-f6kav15kjS4YaCnzwHfX45Lwj4JC0" id="card_front12">
-    <img class="back-face card-face" alt="" id="card_back12" onclick="card_click('#card_back12','#card_front12')">
+    <img class="front-face card-face" id="card_front12" src="http://cache4.asset-cache.net/xc/511617655.jpg?v=2&amp;c=IWSAsset&amp;k=2&amp;d=gSrlMj8mG90g-6ymmHyzZ2GcoPp6mUkmbdf-f6kav15kjS4YaCnzwHfX45Lwj4JC0">
+    <img class="back-face card-face" id="card_back12" onclick="card_click('#card_back12','#card_front12')" alt="">
 </div>
 
 
 <div class="card_container">
     
-    <img class="front-face card-face" src="http://floral-designs.org/hash/bigthumbs/f/7/a/6/f7a6-vector-gold-font-type-letter-r-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-208159081.jpg" id="card_front13">
-    <img class="back-face card-face" alt="" id="card_back13" onclick="card_click('#card_back13','#card_front13')">
+    <img class="front-face card-face" id="card_front13" src="http://floral-designs.org/hash/bigthumbs/f/7/a/6/f7a6-vector-gold-font-type-letter-r-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-208159081.jpg">
+    <img class="back-face card-face" id="card_back13" onclick="card_click('#card_back13','#card_front13')" alt="">
 </div>
      <div class="card_container">
     
-    <img class="front-face card-face" src="http://st.depositphotos.com/1006187/4958/i/950/depositphotos_49589071-Golden-Alphabet-C-letter.jpg" id="card_front14">
-    <img class="back-face card-face" alt="" id="card_back14" onclick="card_click('#card_back14','#card_front14')">
+    <img class="front-face card-face" id="card_front14" src="http://st.depositphotos.com/1006187/4958/i/950/depositphotos_49589071-Golden-Alphabet-C-letter.jpg">
+    <img class="back-face card-face" id="card_back14" onclick="card_click('#card_back14','#card_front14')" alt="">
 </div>
 
 <div class="card_container">
     
-    <img class="front-face card-face" src="http://floral-designs.org/hash/bigthumbs/f/7/a/6/f7a6-vector-gold-font-type-letter-r-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-208159081.jpg" id="card_front15">
-    <img class="back-face card-face" alt="" id="card_back15" onclick="card_click('#card_back15','#card_front15')">
+    <img class="front-face card-face" id="card_front15" src="http://floral-designs.org/hash/bigthumbs/f/7/a/6/f7a6-vector-gold-font-type-letter-r-uppercase-vector-baroque-element-of-golden-alphabet-made-from-curls-and-208159081.jpg">
+    <img class="back-face card-face" id="card_back15" onclick="card_click('#card_back15','#card_front15')" alt="">
 </div>
   <div class="card_container">
     
-    <img class="front-face card-face" src="http://st.depositphotos.com/1006187/4958/i/950/depositphotos_49589071-Golden-Alphabet-C-letter.jpg" id="card_front16">
-    <img class="back-face card-face" alt="" id="card_back16" onclick="card_click('#card_back16','#card_front16')">
+    <img class="front-face card-face" id="card_front16" src="http://st.depositphotos.com/1006187/4958/i/950/depositphotos_49589071-Golden-Alphabet-C-letter.jpg">
+    <img class="back-face card-face" id="card_back16" onclick="card_click('#card_back16','#card_front16')" alt="">
 </div>
 <div class="card_container">
     
-    <img class="front-face card-face" src="http://www.b2bling.com/out/pictures/master/product/1/sol_lgn_1.jpg
-" id="card_front17">
-    <img class="back-face card-face" alt="" id="card_back17" onclick="card_click('#card_back17','#card_front17')">
+    <img class="front-face card-face" id="card_front17" src="http://www.b2bling.com/out/pictures/master/product/1/sol_lgn_1.jpg&#10;">
+    <img class="back-face card-face" id="card_back17" onclick="card_click('#card_back17','#card_front17')" alt="">
 </div>
   <div class="card_container">
     
-    <img class="front-face card-face"  id="card_front18" src="http://www.b2bling.com/out/pictures/master/product/1/sol_lgn_1.jpg
-" 
->
-    <img class="back-face card-face" alt="" id="card_back18" onclick="card_click('#card_back18','#card_front18')">
+    <img class="front-face card-face" id="card_front18" src="http://www.b2bling.com/out/pictures/master/product/1/sol_lgn_1.jpg&#10;">
+    <img class="back-face card-face" id="card_back18" onclick="card_click('#card_back18','#card_front18')" alt="">
 </div>
-
-
-
-
-   
 </div>
-
-   
-     
-
-
-
-   <div id="main">
-
+<div id="main">
       <p>Play the Concentration game! Click the tiles on the left and
          match pairs of identical images.
-         <br /><br />
-         Click the <b >Reload Tiles</b> 
+         <br><br>
+         Click the <b>Reload Tiles</b> 
          button below to randomize the position of the tiles and play 
          again.
-         <br /><br />
-         Click the <b >Show Tiles</b> button to view the 
+         <br><br>
+         Click the <b>Show Tiles</b> button to view the 
          solution.
       </p>
 
    </div>
    <div id="controls">
       <p>
-         <input type="button" value="Reload Tiles" id="reload" class="randomize" onlick="reload_tiles()">
-         <input type="button" value="Show Tiles" id="showAll" />
+         <input class="randomize" id="reload" type="button" value="Reload Tiles" onlick="reload_tiles()">
+         <input id="showAll" type="button" value="Show Tiles">
       </p>
    </div>
+   <p>
+      <input id="accuracy" type="text" value="match">&lt;&gt;
 
-   <address>
-
-   </address>
-    <div class="hi" id="baby"></div>
-   <div class="hi" ></div>
-  
-    <p>
-      <input type="text" value="match" id="accuracy"><>
 </body>
 </html>
